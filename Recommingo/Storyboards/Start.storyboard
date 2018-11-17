@@ -145,7 +145,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="IbN-u3-9Vp" kind="presentation" id="YIt-q3-CaX"/>
+                                            <action selector="signUpBtn_TouchUpInside:" destination="Pne-wu-fQR" eventType="touchUpInside" id="583-fm-a16"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -207,7 +207,4 @@
     <resources>
         <image name="placeholder" width="1300" height="1300"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="YIt-q3-CaX"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
 
 class SignUpViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
@@ -60,6 +62,8 @@ class SignUpViewController: UIViewController {
         //round the profile photo
         profileImage.layer.cornerRadius = 40
         profileImage.clipsToBounds = true
+        //allow it to be tapped to go to image picker
+        
         
         
         // Do any additional setup after loading the view.
@@ -78,5 +82,45 @@ class SignUpViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func signUpBtn_TouchUpInside(_ sender: Any) {
+        
+        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (authResult, error) in
+            // ...
+            if error != nil {
+                print(error!.localizedDescription)
+                return
+            }
+            
+            var ref: DatabaseReference!
+            ref = Database.database().reference()
+            let usersReference = ref.child("users")
+            let uid = authResult?.user.uid
+            let newUserReference = usersReference.child(uid!)
 
+            //store profile-like user data in the users node (different from authentication)
+            newUserReference.setValue(["username": self.usernameTextField.text!, "email": self.emailTextField.text!])
+            print(" userDesc  \(newUserReference.description())")
+            guard let user = authResult?.user else { return }
+            print(user)
+        }
+        
+        
+        //FirebaseAuth.Auth.auth().createUser(withEmail: "user1@gmail.com", password: "123456",  completion: {
+            //(user: User?, error: Error?) in
+            //if error != nil {
+             //   print(error?.localizedDescription)
+             //   return
+           // }
+           // print(user)
+        //})
+        
+    }
+    
+}
+
+// allow for the user to select a profile pic from camera roll while signing up
+extension SignUpViewController:UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        <#code#>
+    }
 }
