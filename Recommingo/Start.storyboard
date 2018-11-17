@@ -49,7 +49,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="3z7-Tv-xLh" kind="presentation" id="cJQ-8Q-Uvu"/>
+                                            <segue destination="IbN-u3-9Vp" kind="presentation" id="cJQ-8Q-Uvu"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -141,7 +141,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="3z7-Tv-xLh" kind="presentation" id="YIt-q3-CaX"/>
+                                            <segue destination="IbN-u3-9Vp" kind="presentation" id="YIt-q3-CaX"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -183,120 +183,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="teH-Uy-FDU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="353" y="840"/>
+            <point key="canvasLocation" x="439" y="745"/>
         </scene>
-        <!--Profile-->
-        <scene sceneID="Jfl-CX-0fa">
+        <!--TabBarId-->
+        <scene sceneID="XhZ-tv-zAu">
             <objects>
-                <viewController id="CTO-Pw-CYU" customClass="ProfileViewController" customModule="Recommingo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="PgO-3K-5Mq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="FOe-q7-2fE"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="Profile" selectedImage="Profile_Selected" id="zOt-aq-gGg"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wha-99-j4I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="TabBarId" id="IbN-u3-9Vp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iam-u8-l2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2353" y="1622"/>
-        </scene>
-        <!--Discover-->
-        <scene sceneID="VPj-We-ATp">
-            <objects>
-                <viewController id="Dbl-o8-aJk" customClass="DiscoverViewController" customModule="Recommingo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="SNI-tg-jFL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Yo9-a2-Hk0"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Discover" image="Search" selectedImage="Search_Selected" id="4l0-3W-eVn"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GGt-eb-im8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2353" y="-399"/>
-        </scene>
-        <!--Activity-->
-        <scene sceneID="JBr-y5-MDZ">
-            <objects>
-                <viewController id="szI-sM-9KQ" customClass="ActivityViewController" customModule="Recommingo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="pO5-DH-7uL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Yb1-pG-fH3"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Activity" image="Activity" selectedImage="Activity_Selected" id="f8q-e9-v69"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="l2v-fO-vxU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2353" y="951"/>
-        </scene>
-        <!--Home-->
-        <scene sceneID="b0H-0f-NA9">
-            <objects>
-                <viewController id="pNw-Lz-bPS" customClass="HomeViewController" customModule="Recommingo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vzF-Y9-Egq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="aR8-66-v1m"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="Home" selectedImage="Home_Selected" id="q44-NA-wyY"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="l8x-g8-1ub" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2353" y="-1066"/>
-        </scene>
-        <!--Camera-->
-        <scene sceneID="Nnt-DZ-ydo">
-            <objects>
-                <viewController id="kmH-Ol-0Lx" customClass="CameraViewController" customModule="Recommingo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="IzN-UZ-O9Q">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="No7-Fb-S39"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Camera" image="Photo" id="DCn-62-y4f"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ftd-wW-wAh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2353" y="285"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="Lgs-fr-8i5">
-            <objects>
-                <tabBarController id="3z7-Tv-xLh" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xts-6P-E3b">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="pNw-Lz-bPS" kind="relationship" relationship="viewControllers" id="DIL-pO-JrZ"/>
-                        <segue destination="Dbl-o8-aJk" kind="relationship" relationship="viewControllers" id="b14-ae-9Ts"/>
-                        <segue destination="kmH-Ol-0Lx" kind="relationship" relationship="viewControllers" id="e33-jf-Ewi"/>
-                        <segue destination="CTO-Pw-CYU" kind="relationship" relationship="viewControllers" id="O1a-GO-epj"/>
-                        <segue destination="szI-sM-9KQ" kind="relationship" relationship="viewControllers" id="1Kw-57-NS4"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZLg-Pa-e2A" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1550" y="64"/>
+            <point key="canvasLocation" x="1048" y="257"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Activity" width="22" height="20"/>
-        <image name="Activity_Selected" width="22" height="20"/>
-        <image name="Home" width="21" height="23"/>
-        <image name="Home_Selected" width="21" height="23"/>
-        <image name="Photo" width="22" height="23"/>
-        <image name="Profile" width="20" height="21"/>
-        <image name="Profile_Selected" width="20" height="21"/>
-        <image name="Search" width="23" height="22"/>
-        <image name="Search_Selected" width="23" height="22"/>
         <image name="placeholder" width="1300" height="1300"/>
     </resources>
     <inferredMetricsTieBreakers>
