@@ -63,10 +63,19 @@ class SignUpViewController: UIViewController {
         profileImage.layer.cornerRadius = 40
         profileImage.clipsToBounds = true
         //allow it to be tapped to go to image picker
-        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SignUpViewController.handleSelectProfileImageView))
+       profileImage.addGestureRecognizer(tapGesture)
+       profileImage.isUserInteractionEnabled = true
         
         
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func handleSelectProfileImageView() {
+        print("todo tapped")
+        let pickerController = UIImagePickerController()
+        pickerController.delegate = self
+        present(pickerController, animated: true, completion: nil)
     }
     
     @IBAction func dismiss_onClick(_ sender: Any) {
@@ -121,6 +130,7 @@ class SignUpViewController: UIViewController {
 // allow for the user to select a profile pic from camera roll while signing up
 extension SignUpViewController:UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        <#code#>
+        print("did finish?")
+        dismiss(animated: true, completion: nil)
     }
 }
