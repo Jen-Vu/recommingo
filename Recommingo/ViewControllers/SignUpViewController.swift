@@ -9,13 +9,16 @@
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
+import FirebaseStorage
 
 class SignUpViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
     @IBOutlet weak var profileImage: UIImageView!
+    
+    @IBOutlet weak var signUpButton: UIButton!
+    var selectedImage: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,10 +70,25 @@ class SignUpViewController: UIViewController {
        profileImage.addGestureRecognizer(tapGesture)
        profileImage.isUserInteractionEnabled = true
         
-        
+        handleTextField()
         // Do any additional setup after loading the view.
     }
     
+    @objc func handleTextField(){
+        usernameTextField.addTarget(self, action:  #selector(SignUpViewController.textFieldDidChange), for: UIControl.Event.editingChanged)
+        emailTextField.addTarget(self, action:  #selector(SignUpViewController.textFieldDidChange), for: UIControl.Event.editingChanged)
+        passwordTextField.addTarget(self, action:  #selector(SignUpViewController.textFieldDidChange), for: UIControl.Event.editingChanged)
+        
+    }
+    @objc func textFieldDidChange() {
+        guard let username = usernameTextField.text, !username.isEmpty, let email = emailTextField.text, !email.isEmpty, let password = passwordTextField.text, !password.isEmpty else {
+                 signUpButton.setTitleColor(UIColor.lightText, for: UIControl.State.normal)
+            signUpButton.isEnabled = false
+            return
+        }
+          signUpButton.isEnabled = true
+        signUpButton.setTitleColor(UIColor.white, for: UIControl.State.normal)
+    }
     @objc func handleSelectProfileImageView() {
         print("todo tapped")
         let pickerController = UIImagePickerController()
@@ -92,7 +110,6 @@ class SignUpViewController: UIViewController {
     }
     */
     @IBAction func signUpBtn_TouchUpInside(_ sender: Any) {
-        
         Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (authResult, error) in
             // ...
             if error != nil {
@@ -100,37 +117,47 @@ class SignUpViewController: UIViewController {
                 return
             }
             
-            var ref: DatabaseReference!
-            ref = Database.database().reference()
-            let usersReference = ref.child("users")
             let uid = authResult?.user.uid
-            let newUserReference = usersReference.child(uid!)
-
-            //store profile-like user data in the users node (different from authentication)
-            newUserReference.setValue(["username": self.usernameTextField.text!, "email": self.emailTextField.text!])
-            print(" userDesc  \(newUserReference.description())")
-            guard let user = authResult?.user else { return }
-            print(user)
+            let storageRef = Storage.storage().reference(forURL: "gs://recommingo.appspot.com").child("profile_image").child(uid!)
+            if let profileImg = self.selectedImage, let imageData = profileImg.jpegData(compressionQuality: 0.1 ) {
+                storageRef.putData(imageData, metadata: nil, completion: { (metadata, error) in
+                    if error != nil {
+                        return
+                    }
+                    storageRef.downloadURL(completion: { (url, error) in
+                        if error != nil {
+                            print("failed to get url from meta data", error!)
+                            return
+                        }
+                        let profileImageUrl = "\(String(describing: url))"
+                        var ref: DatabaseReference!
+                        ref = Database.database().reference()
+                        let usersReference = ref.child("users")
+                        let newUserReference = usersReference.child(uid!)
+                        
+                        newUserReference.setValue(["username": self.usernameTextField.text!, "email": self.emailTextField.text!, "profileImageUrl": profileImageUrl])
+                    })
+                    
+                    
+                    
+                    //guard let user = authResult?.user else { return }
+                }
+                )
+            }
+            
         }
         
-        
-        //FirebaseAuth.Auth.auth().createUser(withEmail: "user1@gmail.com", password: "123456",  completion: {
-            //(user: User?, error: Error?) in
-            //if error != nil {
-             //   print(error?.localizedDescription)
-             //   return
-           // }
-           // print(user)
-        //})
-        
     }
-    
 }
 
 // allow for the user to select a profile pic from camera roll while signing up
 extension SignUpViewController:UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        print("did finish?")
+        
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            selectedImage = image
+            profileImage.image = image
+        }
         dismiss(animated: true, completion: nil)
     }
 }
