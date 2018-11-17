@@ -182,7 +182,7 @@
         <!--Profile-->
         <scene sceneID="Jfl-CX-0fa">
             <objects>
-                <viewController id="CTO-Pw-CYU" sceneMemberID="viewController">
+                <viewController id="CTO-Pw-CYU" customClass="ProfileViewController" customModule="Recommingo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PgO-3K-5Mq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -198,7 +198,7 @@
         <!--Discover-->
         <scene sceneID="VPj-We-ATp">
             <objects>
-                <viewController id="Dbl-o8-aJk" sceneMemberID="viewController">
+                <viewController id="Dbl-o8-aJk" customClass="DiscoverViewController" customModule="Recommingo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SNI-tg-jFL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -214,7 +214,7 @@
         <!--Activity-->
         <scene sceneID="JBr-y5-MDZ">
             <objects>
-                <viewController id="szI-sM-9KQ" sceneMemberID="viewController">
+                <viewController id="szI-sM-9KQ" customClass="ActivityViewController" customModule="Recommingo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pO5-DH-7uL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -230,7 +230,7 @@
         <!--Home-->
         <scene sceneID="b0H-0f-NA9">
             <objects>
-                <viewController id="pNw-Lz-bPS" sceneMemberID="viewController">
+                <viewController id="pNw-Lz-bPS" customClass="HomeViewController" customModule="Recommingo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vzF-Y9-Egq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -246,7 +246,7 @@
         <!--Camera-->
         <scene sceneID="Nnt-DZ-ydo">
             <objects>
-                <viewController id="kmH-Ol-0Lx" sceneMemberID="viewController">
+                <viewController id="kmH-Ol-0Lx" customClass="CameraViewController" customModule="Recommingo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IzN-UZ-O9Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
