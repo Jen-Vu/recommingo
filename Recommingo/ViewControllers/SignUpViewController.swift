@@ -135,9 +135,7 @@ class SignUpViewController: UIViewController {
                 }
                 )
             }
-            
         }
-        
     }
     
     func setUserInformation(profileImageUrl: String, username: String, email: String, uid: String) {

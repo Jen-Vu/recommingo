@@ -49,7 +49,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="IbN-u3-9Vp" kind="presentation" id="cJQ-8Q-Uvu"/>
+                                            <action selector="signInButton_TouchUpInside:" destination="Ysv-pj-0XH" eventType="touchUpInside" id="VFd-Qa-RlC"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -90,6 +90,8 @@
                     <connections>
                         <outlet property="emailTextField" destination="dsJ-Aw-sbB" id="X8f-vh-Pf7"/>
                         <outlet property="passwordTextField" destination="VBM-iO-Am5" id="VJn-cX-qgU"/>
+                        <outlet property="signInButton" destination="0UB-9j-AuL" id="s3s-zc-Dnm"/>
+                        <segue destination="IbN-u3-9Vp" kind="presentation" identifier="signInToTabbarVC" id="Zsw-7t-xwd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d5O-ge-qZd" userLabel="First Responder" sceneMemberID="firstResponder"/>
