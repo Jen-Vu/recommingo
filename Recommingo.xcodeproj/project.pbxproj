@@ -13,11 +13,9 @@
 		005494D6219EE7B60001D7B9 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005494D5219EE7B60001D7B9 /* Start.storyboard */; };
 		005494D8219EE91E0001D7B9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005494D7219EE91E0001D7B9 /* SignInViewController.swift */; };
 		005494DA219EEF000001D7B9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005494D9219EEF000001D7B9 /* SignUpViewController.swift */; };
-		00C8579021A06E1B00E64633 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C8578F21A06E1B00E64633 /* Home.storyboard */; };
-		00C8579221A06E8300E64633 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C8579121A06E8300E64633 /* Discover.storyboard */; };
 		00C8579421A06EC900E64633 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C8579321A06EC900E64633 /* Camera.storyboard */; };
 		00C8579621A06EF500E64633 /* Activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C8579521A06EF500E64633 /* Activity.storyboard */; };
-		00C8579821A06F3200E64633 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C8579721A06F3200E64633 /* Profile.storyboard */; };
+		00C8579C21A07A4800E64633 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00C8579B21A07A4800E64633 /* GoogleService-Info.plist */; };
 		00D2AA0221A03E13001B5B48 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D2AA0121A03E13001B5B48 /* HomeViewController.swift */; };
 		00D2AA0421A03EAC001B5B48 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D2AA0321A03EAC001B5B48 /* DiscoverViewController.swift */; };
 		00D2AA0621A03ED1001B5B48 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D2AA0521A03ED1001B5B48 /* CameraViewController.swift */; };
@@ -26,8 +24,8 @@
 		00D2AA0C21A0453A001B5B48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D2AA0B21A0453A001B5B48 /* Main.storyboard */; };
 		00D2AA0E21A0477D001B5B48 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D2AA0D21A0477D001B5B48 /* Home.storyboard */; };
 		00D2AA1021A04885001B5B48 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D2AA0F21A04885001B5B48 /* Discover.storyboard */; };
-		00D2AA1221A048BF001B5B48 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D2AA1121A048BF001B5B48 /* Camera.storyboard */; };
 		00D2AA1621A048F5001B5B48 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D2AA1521A048F5001B5B48 /* Profile.storyboard */; };
+		44B6C1045D89A13585899A14 /* Pods_Recommingo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0DAEF7F633E6EC7F1208AF /* Pods_Recommingo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,11 +37,9 @@
 		005494D5219EE7B60001D7B9 /* Start.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
 		005494D7219EE91E0001D7B9 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		005494D9219EEF000001D7B9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		00C8578F21A06E1B00E64633 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		00C8579121A06E8300E64633 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
 		00C8579321A06EC900E64633 /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
 		00C8579521A06EF500E64633 /* Activity.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Activity.storyboard; sourceTree = "<group>"; };
-		00C8579721A06F3200E64633 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		00C8579B21A07A4800E64633 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		00D2AA0121A03E13001B5B48 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		00D2AA0321A03EAC001B5B48 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		00D2AA0521A03ED1001B5B48 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -52,8 +48,10 @@
 		00D2AA0B21A0453A001B5B48 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		00D2AA0D21A0477D001B5B48 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		00D2AA0F21A04885001B5B48 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
-		00D2AA1121A048BF001B5B48 /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
 		00D2AA1521A048F5001B5B48 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		28E50CE46C86ECE901A638AF /* Pods-Recommingo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recommingo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Recommingo/Pods-Recommingo.release.xcconfig"; sourceTree = "<group>"; };
+		3D7CC5E177E48187E413224E /* Pods-Recommingo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recommingo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Recommingo/Pods-Recommingo.debug.xcconfig"; sourceTree = "<group>"; };
+		4B0DAEF7F633E6EC7F1208AF /* Pods_Recommingo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Recommingo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44B6C1045D89A13585899A14 /* Pods_Recommingo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +71,8 @@
 			children = (
 				005494C2219EE4D30001D7B9 /* Recommingo */,
 				005494C1219EE4D30001D7B9 /* Products */,
+				0130897B37A94C9329F0D6AC /* Pods */,
+				7AA3EBBE90C125EF5AEF8B37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +88,33 @@
 			isa = PBXGroup;
 			children = (
 				005494C3219EE4D30001D7B9 /* AppDelegate.swift */,
+				00C8579A21A077EB00E64633 /* ViewControllers */,
+				00C8579921A077D800E64633 /* Storyboards */,
+				005494CA219EE4D70001D7B9 /* Assets.xcassets */,
+				005494CC219EE4D70001D7B9 /* LaunchScreen.storyboard */,
+				00C8579B21A07A4800E64633 /* GoogleService-Info.plist */,
+				005494CF219EE4D70001D7B9 /* Info.plist */,
+			);
+			path = Recommingo;
+			sourceTree = "<group>";
+		};
+		00C8579921A077D800E64633 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				00D2AA0F21A04885001B5B48 /* Discover.storyboard */,
+				00D2AA0D21A0477D001B5B48 /* Home.storyboard */,
+				00D2AA0B21A0453A001B5B48 /* Main.storyboard */,
+				00C8579521A06EF500E64633 /* Activity.storyboard */,
+				00C8579321A06EC900E64633 /* Camera.storyboard */,
+				005494D5219EE7B60001D7B9 /* Start.storyboard */,
+				00D2AA1521A048F5001B5B48 /* Profile.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		00C8579A21A077EB00E64633 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
 				005494D7219EE91E0001D7B9 /* SignInViewController.swift */,
 				005494D9219EEF000001D7B9 /* SignUpViewController.swift */,
 				00D2AA0121A03E13001B5B48 /* HomeViewController.swift */,
@@ -94,22 +122,25 @@
 				00D2AA0521A03ED1001B5B48 /* CameraViewController.swift */,
 				00D2AA0721A03EDC001B5B48 /* ActivityViewController.swift */,
 				00D2AA0921A03EE4001B5B48 /* ProfileViewController.swift */,
-				005494D5219EE7B60001D7B9 /* Start.storyboard */,
-				00D2AA0B21A0453A001B5B48 /* Main.storyboard */,
-				00C8579721A06F3200E64633 /* Profile.storyboard */,
-				00C8579521A06EF500E64633 /* Activity.storyboard */,
-				00C8579321A06EC900E64633 /* Camera.storyboard */,
-				00C8579121A06E8300E64633 /* Discover.storyboard */,
-				00C8578F21A06E1B00E64633 /* Home.storyboard */,
-				00D2AA1521A048F5001B5B48 /* Profile.storyboard */,
-				00D2AA1121A048BF001B5B48 /* Camera.storyboard */,
-				00D2AA0F21A04885001B5B48 /* Discover.storyboard */,
-				00D2AA0D21A0477D001B5B48 /* Home.storyboard */,
-				005494CA219EE4D70001D7B9 /* Assets.xcassets */,
-				005494CC219EE4D70001D7B9 /* LaunchScreen.storyboard */,
-				005494CF219EE4D70001D7B9 /* Info.plist */,
 			);
-			path = Recommingo;
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0130897B37A94C9329F0D6AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D7CC5E177E48187E413224E /* Pods-Recommingo.debug.xcconfig */,
+				28E50CE46C86ECE901A638AF /* Pods-Recommingo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7AA3EBBE90C125EF5AEF8B37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B0DAEF7F633E6EC7F1208AF /* Pods_Recommingo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 005494D2219EE4D70001D7B9 /* Build configuration list for PBXNativeTarget "Recommingo" */;
 			buildPhases = (
+				094F7B782EEB1E76D4B7402C /* [CP] Check Pods Manifest.lock */,
 				005494BC219EE4D30001D7B9 /* Sources */,
 				005494BD219EE4D30001D7B9 /* Frameworks */,
 				005494BE219EE4D30001D7B9 /* Resources */,
+				C6B5B559E416CA5B5E3BB270 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -172,10 +205,6 @@
 			files = (
 				005494CE219EE4D70001D7B9 /* LaunchScreen.storyboard in Resources */,
 				00C8579421A06EC900E64633 /* Camera.storyboard in Resources */,
-				00C8579021A06E1B00E64633 /* Home.storyboard in Resources */,
-				00C8579221A06E8300E64633 /* Discover.storyboard in Resources */,
-				00D2AA1221A048BF001B5B48 /* Camera.storyboard in Resources */,
-				00C8579821A06F3200E64633 /* Profile.storyboard in Resources */,
 				00D2AA0E21A0477D001B5B48 /* Home.storyboard in Resources */,
 				00C8579621A06EF500E64633 /* Activity.storyboard in Resources */,
 				005494CB219EE4D70001D7B9 /* Assets.xcassets in Resources */,
@@ -183,10 +212,60 @@
 				00D2AA1621A048F5001B5B48 /* Profile.storyboard in Resources */,
 				00D2AA0C21A0453A001B5B48 /* Main.storyboard in Resources */,
 				00D2AA1021A04885001B5B48 /* Discover.storyboard in Resources */,
+				00C8579C21A07A4800E64633 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		094F7B782EEB1E76D4B7402C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Recommingo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6B5B559E416CA5B5E3BB270 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Recommingo/Pods-Recommingo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Recommingo/Pods-Recommingo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		005494BC219EE4D30001D7B9 /* Sources */ = {
@@ -336,6 +415,7 @@
 		};
 		005494D3219EE4D70001D7B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D7CC5E177E48187E413224E /* Pods-Recommingo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -354,6 +434,7 @@
 		};
 		005494D4219EE4D70001D7B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28E50CE46C86ECE901A638AF /* Pods-Recommingo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

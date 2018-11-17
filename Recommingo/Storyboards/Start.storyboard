@@ -87,6 +87,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="t1l-Zb-PpS"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="dsJ-Aw-sbB" id="X8f-vh-Pf7"/>
+                        <outlet property="passwordTextField" destination="VBM-iO-Am5" id="VJn-cX-qgU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d5O-ge-qZd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -180,6 +184,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3dQ-Ti-zYG"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="fZT-yS-Hc7" id="o6z-dP-5r1"/>
+                        <outlet property="passwordTextField" destination="6nr-Hi-ZRU" id="lRB-ON-aY8"/>
+                        <outlet property="profileImage" destination="pgC-7G-HWh" id="aD5-hn-wjI"/>
+                        <outlet property="usernameTextField" destination="aan-FC-4wm" id="Li6-UE-Ukm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="teH-Uy-FDU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
