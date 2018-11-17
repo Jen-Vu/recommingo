@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3z7-Tv-xLh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ysv-pj-0XH">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -48,6 +48,9 @@
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="3z7-Tv-xLh" kind="presentation" id="cJQ-8Q-Uvu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -137,6 +140,9 @@
                                         <state key="normal" title="Sign Up">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="3z7-Tv-xLh" kind="presentation" id="YIt-q3-CaX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -177,7 +183,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="teH-Uy-FDU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="860" y="63.418290854572717"/>
+            <point key="canvasLocation" x="353" y="840"/>
         </scene>
         <!--Profile-->
         <scene sceneID="Jfl-CX-0fa">
@@ -293,4 +299,7 @@
         <image name="Search_Selected" width="23" height="22"/>
         <image name="placeholder" width="1300" height="1300"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="YIt-q3-CaX"/>
+    </inferredMetricsTieBreakers>
 </document>
