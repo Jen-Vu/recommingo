@@ -13,6 +13,11 @@
 		005494D6219EE7B60001D7B9 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005494D5219EE7B60001D7B9 /* Start.storyboard */; };
 		005494D8219EE91E0001D7B9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005494D7219EE91E0001D7B9 /* SignInViewController.swift */; };
 		005494DA219EEF000001D7B9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005494D9219EEF000001D7B9 /* SignUpViewController.swift */; };
+		00C8579021A06E1B00E64633 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C8578F21A06E1B00E64633 /* Home.storyboard */; };
+		00C8579221A06E8300E64633 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C8579121A06E8300E64633 /* Discover.storyboard */; };
+		00C8579421A06EC900E64633 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C8579321A06EC900E64633 /* Camera.storyboard */; };
+		00C8579621A06EF500E64633 /* Activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C8579521A06EF500E64633 /* Activity.storyboard */; };
+		00C8579821A06F3200E64633 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C8579721A06F3200E64633 /* Profile.storyboard */; };
 		00D2AA0221A03E13001B5B48 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D2AA0121A03E13001B5B48 /* HomeViewController.swift */; };
 		00D2AA0421A03EAC001B5B48 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D2AA0321A03EAC001B5B48 /* DiscoverViewController.swift */; };
 		00D2AA0621A03ED1001B5B48 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D2AA0521A03ED1001B5B48 /* CameraViewController.swift */; };
@@ -22,7 +27,6 @@
 		00D2AA0E21A0477D001B5B48 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D2AA0D21A0477D001B5B48 /* Home.storyboard */; };
 		00D2AA1021A04885001B5B48 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D2AA0F21A04885001B5B48 /* Discover.storyboard */; };
 		00D2AA1221A048BF001B5B48 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D2AA1121A048BF001B5B48 /* Camera.storyboard */; };
-		00D2AA1421A048E6001B5B48 /* Acitivity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D2AA1321A048E6001B5B48 /* Acitivity.storyboard */; };
 		00D2AA1621A048F5001B5B48 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D2AA1521A048F5001B5B48 /* Profile.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +39,11 @@
 		005494D5219EE7B60001D7B9 /* Start.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
 		005494D7219EE91E0001D7B9 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		005494D9219EEF000001D7B9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		00C8578F21A06E1B00E64633 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		00C8579121A06E8300E64633 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
+		00C8579321A06EC900E64633 /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
+		00C8579521A06EF500E64633 /* Activity.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Activity.storyboard; sourceTree = "<group>"; };
+		00C8579721A06F3200E64633 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		00D2AA0121A03E13001B5B48 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		00D2AA0321A03EAC001B5B48 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		00D2AA0521A03ED1001B5B48 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -44,7 +53,6 @@
 		00D2AA0D21A0477D001B5B48 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		00D2AA0F21A04885001B5B48 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
 		00D2AA1121A048BF001B5B48 /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
-		00D2AA1321A048E6001B5B48 /* Acitivity.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Acitivity.storyboard; sourceTree = "<group>"; };
 		00D2AA1521A048F5001B5B48 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,8 +96,12 @@
 				00D2AA0921A03EE4001B5B48 /* ProfileViewController.swift */,
 				005494D5219EE7B60001D7B9 /* Start.storyboard */,
 				00D2AA0B21A0453A001B5B48 /* Main.storyboard */,
+				00C8579721A06F3200E64633 /* Profile.storyboard */,
+				00C8579521A06EF500E64633 /* Activity.storyboard */,
+				00C8579321A06EC900E64633 /* Camera.storyboard */,
+				00C8579121A06E8300E64633 /* Discover.storyboard */,
+				00C8578F21A06E1B00E64633 /* Home.storyboard */,
 				00D2AA1521A048F5001B5B48 /* Profile.storyboard */,
-				00D2AA1321A048E6001B5B48 /* Acitivity.storyboard */,
 				00D2AA1121A048BF001B5B48 /* Camera.storyboard */,
 				00D2AA0F21A04885001B5B48 /* Discover.storyboard */,
 				00D2AA0D21A0477D001B5B48 /* Home.storyboard */,
@@ -159,9 +171,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				005494CE219EE4D70001D7B9 /* LaunchScreen.storyboard in Resources */,
-				00D2AA1421A048E6001B5B48 /* Acitivity.storyboard in Resources */,
+				00C8579421A06EC900E64633 /* Camera.storyboard in Resources */,
+				00C8579021A06E1B00E64633 /* Home.storyboard in Resources */,
+				00C8579221A06E8300E64633 /* Discover.storyboard in Resources */,
 				00D2AA1221A048BF001B5B48 /* Camera.storyboard in Resources */,
+				00C8579821A06F3200E64633 /* Profile.storyboard in Resources */,
 				00D2AA0E21A0477D001B5B48 /* Home.storyboard in Resources */,
+				00C8579621A06EF500E64633 /* Activity.storyboard in Resources */,
 				005494CB219EE4D70001D7B9 /* Assets.xcassets in Resources */,
 				005494D6219EE7B60001D7B9 /* Start.storyboard in Resources */,
 				00D2AA1621A048F5001B5B48 /* Profile.storyboard in Resources */,
