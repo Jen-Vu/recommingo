@@ -19,6 +19,11 @@
 		00D2AA0821A03EDC001B5B48 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D2AA0721A03EDC001B5B48 /* ActivityViewController.swift */; };
 		00D2AA0A21A03EE4001B5B48 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D2AA0921A03EE4001B5B48 /* ProfileViewController.swift */; };
 		00D2AA0C21A0453A001B5B48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D2AA0B21A0453A001B5B48 /* Main.storyboard */; };
+		00D2AA0E21A0477D001B5B48 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D2AA0D21A0477D001B5B48 /* Home.storyboard */; };
+		00D2AA1021A04885001B5B48 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D2AA0F21A04885001B5B48 /* Discover.storyboard */; };
+		00D2AA1221A048BF001B5B48 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D2AA1121A048BF001B5B48 /* Camera.storyboard */; };
+		00D2AA1421A048E6001B5B48 /* Acitivity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D2AA1321A048E6001B5B48 /* Acitivity.storyboard */; };
+		00D2AA1621A048F5001B5B48 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D2AA1521A048F5001B5B48 /* Profile.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,11 @@
 		00D2AA0721A03EDC001B5B48 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		00D2AA0921A03EE4001B5B48 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		00D2AA0B21A0453A001B5B48 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		00D2AA0D21A0477D001B5B48 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		00D2AA0F21A04885001B5B48 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
+		00D2AA1121A048BF001B5B48 /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
+		00D2AA1321A048E6001B5B48 /* Acitivity.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Acitivity.storyboard; sourceTree = "<group>"; };
+		00D2AA1521A048F5001B5B48 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,11 @@
 				00D2AA0921A03EE4001B5B48 /* ProfileViewController.swift */,
 				005494D5219EE7B60001D7B9 /* Start.storyboard */,
 				00D2AA0B21A0453A001B5B48 /* Main.storyboard */,
+				00D2AA1521A048F5001B5B48 /* Profile.storyboard */,
+				00D2AA1321A048E6001B5B48 /* Acitivity.storyboard */,
+				00D2AA1121A048BF001B5B48 /* Camera.storyboard */,
+				00D2AA0F21A04885001B5B48 /* Discover.storyboard */,
+				00D2AA0D21A0477D001B5B48 /* Home.storyboard */,
 				005494CA219EE4D70001D7B9 /* Assets.xcassets */,
 				005494CC219EE4D70001D7B9 /* LaunchScreen.storyboard */,
 				005494CF219EE4D70001D7B9 /* Info.plist */,
@@ -144,9 +159,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				005494CE219EE4D70001D7B9 /* LaunchScreen.storyboard in Resources */,
+				00D2AA1421A048E6001B5B48 /* Acitivity.storyboard in Resources */,
+				00D2AA1221A048BF001B5B48 /* Camera.storyboard in Resources */,
+				00D2AA0E21A0477D001B5B48 /* Home.storyboard in Resources */,
 				005494CB219EE4D70001D7B9 /* Assets.xcassets in Resources */,
 				005494D6219EE7B60001D7B9 /* Start.storyboard in Resources */,
+				00D2AA1621A048F5001B5B48 /* Profile.storyboard in Resources */,
 				00D2AA0C21A0453A001B5B48 /* Main.storyboard in Resources */,
+				00D2AA1021A04885001B5B48 /* Discover.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
