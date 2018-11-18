@@ -72,10 +72,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="No7-Fb-S39"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Camera" id="3er-U7-hXi"/>
+                    <navigationItem key="navigationItem" title="Camera" id="3er-U7-hXi">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="5Fn-mt-jz3">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="remove_TouchUpInside:" destination="kmH-Ol-0Lx" id="7n9-wK-YrX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="captionTextView" destination="mR0-nb-Xah" id="UWq-WU-esP"/>
                         <outlet property="photo" destination="YoY-R3-gCw" id="BaR-gU-scW"/>
+                        <outlet property="removeButton" destination="5Fn-mt-jz3" id="rIE-qi-k0m"/>
                         <outlet property="shareButton" destination="Olm-MZ-P8e" id="FIF-2c-1MY"/>
                     </connections>
                 </viewController>

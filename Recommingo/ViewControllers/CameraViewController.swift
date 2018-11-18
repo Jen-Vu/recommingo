@@ -12,10 +12,11 @@ import FirebaseDatabase
 
 class CameraViewController: UIViewController {
     
+    @IBOutlet weak var removeButton: UIBarButtonItem!
     @IBOutlet weak var captionTextView: UITextView!
     @IBOutlet weak var photo: UIImageView!
-    
     @IBOutlet weak var shareButton: UIButton!
+    
     var selectedImage: UIImage?
     
     override func viewDidLoad() {
@@ -27,6 +28,30 @@ class CameraViewController: UIViewController {
         photo.isUserInteractionEnabled = true
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        handlePost()
+    }
+    
+    //check if we have adequate content in the post to allow sharing
+    func handlePost() {
+        if selectedImage != nil {
+            self.removeButton.isEnabled = true
+            self.shareButton.isEnabled = true
+            self.shareButton.backgroundColor = UIColor(displayP3Red: 0, green: 0, blue: 0, alpha: 1)
+        } else {
+            self.removeButton.isEnabled = false
+            self.shareButton.isEnabled = false
+            self.shareButton.backgroundColor = .lightGray
+        }
+    }
+    
+    //hide the keyboard after post
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
     
     @objc func handleSelectPhoto() {
         let pickerController = UIImagePickerController()
@@ -67,7 +92,14 @@ class CameraViewController: UIViewController {
     
  
     
-        func sendDataToDatabase(photoUrl: String) {
+    @IBAction func remove_TouchUpInside(_ sender: Any) {
+        //reset the post
+        clean()
+        handlePost()
+    }
+    
+    
+    func sendDataToDatabase(photoUrl: String) {
             var ref: DatabaseReference!
             ref = Database.database().reference()
             let postsReference = ref.child("posts")
@@ -84,14 +116,20 @@ class CameraViewController: UIViewController {
                 }
                 ProgressHUD.showSuccess("Success")
                 //reset the post view
-                self.captionTextView.text = ""
-                self.photo.image = UIImage(named: "placeholder-photo")
+                self.clean()
                 
                 //go back to the Home page
                 self.tabBarController?.selectedIndex = 0  
             }
         }
 
+    func clean() {
+        //function to reset the post imputs
+        self.captionTextView.text = ""
+        self.photo.image = UIImage(named: "placeholder-photo")
+        self.selectedImage = nil
+    }
+    
 }
     
 extension CameraViewController:UIImagePickerControllerDelegate, UINavigationControllerDelegate{
