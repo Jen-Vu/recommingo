@@ -20,9 +20,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func logout_TouchUpInside(_ sender: Any) {
-           print(Auth.auth().currentUser)
-        
-            do {
+         do {
                 try Auth.auth().signOut()
             } catch let logoutError {
                 print(logoutError)

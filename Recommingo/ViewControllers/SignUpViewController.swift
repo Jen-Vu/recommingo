@@ -67,12 +67,17 @@ class SignUpViewController: UIViewController {
         profileImage.clipsToBounds = true
         //allow it to be tapped to go to image picker
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SignUpViewController.handleSelectProfileImageView))
-       profileImage.addGestureRecognizer(tapGesture)
-       profileImage.isUserInteractionEnabled = true
+        profileImage.addGestureRecognizer(tapGesture)
+        profileImage.isUserInteractionEnabled = true
         signUpButton.isEnabled = false
         handleTextField()
         // Do any additional setup after loading the view.
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
     
     @objc func handleTextField(){
         usernameTextField.addTarget(self, action:  #selector(SignUpViewController.textFieldDidChange), for: UIControl.Event.editingChanged)
@@ -82,11 +87,11 @@ class SignUpViewController: UIViewController {
     }
     @objc func textFieldDidChange() {
         guard let username = usernameTextField.text, !username.isEmpty, let email = emailTextField.text, !email.isEmpty, let password = passwordTextField.text, !password.isEmpty else {
-                 signUpButton.setTitleColor(UIColor.lightText, for: UIControl.State.normal)
+            signUpButton.setTitleColor(UIColor.lightText, for: UIControl.State.normal)
             signUpButton.isEnabled = false
             return
         }
-          signUpButton.isEnabled = true
+        signUpButton.isEnabled = true
         signUpButton.setTitleColor(UIColor.white, for: UIControl.State.normal)
     }
     @objc func handleSelectProfileImageView() {
@@ -100,43 +105,21 @@ class SignUpViewController: UIViewController {
         dismiss(animated: true, completion:nil)
     }
     
- 
-    @IBAction func signUpBtn_TouchUpInside(_ sender: Any) {
-        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (authResult, error) in
-            // ...
-            if error != nil {
-                print(error!.localizedDescription)
-                return
-            }
-            
-            let uid = authResult?.user.uid
-            let storageRef = Storage.storage().reference(forURL: "gs://recommingo.appspot.com").child("profile_image").child(uid!)
-            if let profileImg = self.selectedImage, let imageData = profileImg.jpegData(compressionQuality: 0.1 ) {
-                storageRef.putData(imageData, metadata: nil, completion: { (metadata, error) in
-                    if error != nil {
-                        return
-                    }
-                    storageRef.downloadURL(completion: { (url, error) in
-                        if error != nil {
-                            print("failed to get url from meta data", error!)
-                            return
-                        }
-                        let profileImageUrl = "\(String(describing: url))"
-                        self.setUserInformation(profileImageUrl: profileImageUrl, username: self.usernameTextField.text!, email: self.emailTextField.text!, uid: uid!)
-                    })
-                }
-                )
-            }
-        }
-    }
     
-    func setUserInformation(profileImageUrl: String, username: String, email: String, uid: String) {
-        var ref: DatabaseReference!
-        ref = Database.database().reference()
-        let usersReference = ref.child("users")
-        let newUserReference = usersReference.child(uid)
-        newUserReference.setValue(["username":  username, "email":  email, "profileImageUrl": profileImageUrl])
-        self.performSegue(withIdentifier: "signUpToTabbarVC", sender: nil)
+    @IBAction func signUpBtn_TouchUpInside(_ sender: Any) {
+        view.endEditing(true)
+        ProgressHUD.show("Waiting...", interaction: false)
+        if let profileImg = self.selectedImage, let imageData = profileImg.jpegData(compressionQuality: 0.1 ) {
+            AuthService.signUp(username: usernameTextField.text!, email: emailTextField.text!, password: passwordTextField.text!, imageData: imageData, onSuccess: {
+                 ProgressHUD.showSuccess("Success")
+                self.performSegue(withIdentifier: "signUpToTabbarVC", sender: nil)
+            }) { (errorString) in
+                ProgressHUD.showError(errorString!)
+            }
+        } else {
+            ProgressHUD.showError("Profile image cannot be empty")
+            
+        }
     }
 }
 

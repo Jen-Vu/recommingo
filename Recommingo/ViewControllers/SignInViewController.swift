@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+ 
 
 class SignInViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
@@ -21,8 +22,8 @@ class SignInViewController: UIViewController {
         emailTextField.tintColor = UIColor.white
         emailTextField.textColor = UIColor.white
         emailTextField.attributedPlaceholder =
-                    NSAttributedString(string: emailTextField.placeholder!,
-                    attributes: [NSAttributedString.Key.foregroundColor: UIColor(white:1.0, alpha:0.6)])
+            NSAttributedString(string: emailTextField.placeholder!,
+                               attributes: [NSAttributedString.Key.foregroundColor: UIColor(white:1.0, alpha:0.6)])
         
         //Add a little line by creating a new layer, and adding a line to it
         let bottomLayerEmail = CALayer()
@@ -45,7 +46,11 @@ class SignInViewController: UIViewController {
         signInButton.isEnabled = false
         handleTextField()
         // Do any additional setup after loading the view.
-
+        
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -59,7 +64,7 @@ class SignInViewController: UIViewController {
         }
         
     }
-
+    
     @objc func handleTextField(){
         emailTextField.addTarget(self, action:  #selector(SignUpViewController.textFieldDidChange), for: UIControl.Event.editingChanged)
         passwordTextField.addTarget(self, action:  #selector(SignUpViewController.textFieldDidChange), for: UIControl.Event.editingChanged)
@@ -76,10 +81,15 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func signInButton_TouchUpInside(_ sender: Any) {
+       view.endEditing(true)
+        ProgressHUD.show("Waiting...", interaction: false)
         AuthService.signIn(email: emailTextField.text!, password: passwordTextField.text!, onSuccess: {
-            //only switch view after we're sure the user is authenticated
+             ProgressHUD.showSuccess("Success")
             self.performSegue(withIdentifier: "signInToTabbarVC", sender: nil)
+        }, onError: {  error in
+            ProgressHUD.showError(error!)
         })
-       }
+        
+    }
     
 }
