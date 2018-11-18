@@ -18,9 +18,13 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //tableView.estimatedRowHeight = 500
+        //because we spent time setting up all the contraints, we can use automaticDimension to all
+        //the table rows to expand to contain all the content we want - e.g. a really long comment
+        tableView.estimatedRowHeight = 521
+        tableView.rowHeight = UITableView.automaticDimension
+        
         //Use this value until we put AutoLayout in place, otherwise the rows are 44 px
-        tableView.rowHeight = 500
+        //tableView.rowHeight = 500
         tableView.dataSource = self //this calls the extension below
         loadPosts()
     }
@@ -61,10 +65,10 @@ extension HomeViewController: UITableViewDataSource {
         //re-usable cells
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as! HomeTableViewCell
         
-     //   cell.profileImageView.image = UIImage(named: "photo1")
-     //   cell.nameLabel.text = "Steve-o"
-    //    cell.postImageView.image = UIImage(named:"photo2")
-     //   cell.captionLabel.text = "Oh this is the good stuff"
+        cell.profileImageView.image = UIImage(named: "photo1")
+        cell.nameLabel.text = "Steve-o"
+        cell.postImageView.image = UIImage(named:"photo2")
+        cell.captionLabel.text = "Oh this is the good stuff and it's a really long caption this is the good stuff and it's a really long caption "
  
         
         return cell
