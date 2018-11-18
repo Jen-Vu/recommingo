@@ -48,11 +48,24 @@
                                     <constraint firstItem="mR0-nb-Xah" firstAttribute="top" secondItem="buy-v2-9wI" secondAttribute="top" constant="10" id="qX1-DV-Bxd"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Olm-MZ-P8e">
+                                <rect key="frame" x="8" y="609" width="359" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bvi-s2-06r"/>
+                                </constraints>
+                                <state key="normal" title="Share">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Olm-MZ-P8e" firstAttribute="leading" secondItem="No7-Fb-S39" secondAttribute="leading" constant="8" id="01Q-G0-zJs"/>
+                            <constraint firstItem="No7-Fb-S39" firstAttribute="bottom" secondItem="Olm-MZ-P8e" secondAttribute="bottom" constant="8" id="BAh-Dh-XUH"/>
                             <constraint firstItem="buy-v2-9wI" firstAttribute="leading" secondItem="No7-Fb-S39" secondAttribute="leading" id="GP7-Cf-vPA"/>
                             <constraint firstItem="buy-v2-9wI" firstAttribute="trailing" secondItem="No7-Fb-S39" secondAttribute="trailing" id="GSJ-dP-nWc"/>
+                            <constraint firstItem="No7-Fb-S39" firstAttribute="trailing" secondItem="Olm-MZ-P8e" secondAttribute="trailing" constant="8" id="Zne-7h-liU"/>
                             <constraint firstItem="buy-v2-9wI" firstAttribute="top" secondItem="No7-Fb-S39" secondAttribute="top" id="aA6-MP-j3l"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="No7-Fb-S39"/>
