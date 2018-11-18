@@ -18,17 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="buy-v2-9wI">
-                                <rect key="frame" x="0.0" y="64" width="375" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="buy-v2-9wI">
+                                <rect key="frame" x="0.0" y="64" width="375" height="100"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YoY-R3-gCw">
-                                        <rect key="frame" x="16" y="24" width="80" height="80"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder-photo" translatesAutoresizingMaskIntoConstraints="NO" id="YoY-R3-gCw">
+                                        <rect key="frame" x="8" y="10" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="KoE-fz-dlF"/>
+                                            <constraint firstAttribute="height" constant="80" id="jlU-jf-JJw"/>
+                                        </constraints>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mR0-nb-Xah">
-                                        <rect key="frame" x="116" y="24" width="227" height="80"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mR0-nb-Xah">
+                                        <rect key="frame" x="96" y="10" width="271" height="80"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -36,9 +37,24 @@
                                     </textView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.40175781249999998" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="mR0-nb-Xah" secondAttribute="bottom" constant="10" id="120-vN-GOh"/>
+                                    <constraint firstItem="YoY-R3-gCw" firstAttribute="top" secondItem="buy-v2-9wI" secondAttribute="top" constant="10" id="3nj-k7-1VK"/>
+                                    <constraint firstAttribute="height" constant="100" id="7AI-77-bJd"/>
+                                    <constraint firstItem="mR0-nb-Xah" firstAttribute="leading" secondItem="YoY-R3-gCw" secondAttribute="trailing" constant="8" id="eKO-Z1-cDW"/>
+                                    <constraint firstAttribute="bottom" secondItem="YoY-R3-gCw" secondAttribute="bottom" constant="10" id="gec-ca-0cS"/>
+                                    <constraint firstItem="YoY-R3-gCw" firstAttribute="leading" secondItem="buy-v2-9wI" secondAttribute="leading" constant="8" id="mGe-NA-sAX"/>
+                                    <constraint firstAttribute="trailing" secondItem="mR0-nb-Xah" secondAttribute="trailing" constant="8" id="pvY-ik-LUK"/>
+                                    <constraint firstItem="mR0-nb-Xah" firstAttribute="top" secondItem="buy-v2-9wI" secondAttribute="top" constant="10" id="qX1-DV-Bxd"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="buy-v2-9wI" firstAttribute="leading" secondItem="No7-Fb-S39" secondAttribute="leading" id="GP7-Cf-vPA"/>
+                            <constraint firstItem="buy-v2-9wI" firstAttribute="trailing" secondItem="No7-Fb-S39" secondAttribute="trailing" id="GSJ-dP-nWc"/>
+                            <constraint firstItem="buy-v2-9wI" firstAttribute="top" secondItem="No7-Fb-S39" secondAttribute="top" id="aA6-MP-j3l"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="No7-Fb-S39"/>
                     </view>
                     <navigationItem key="navigationItem" title="Camera" id="3er-U7-hXi"/>
@@ -71,5 +87,6 @@
     </scenes>
     <resources>
         <image name="Photo" width="22" height="23"/>
+        <image name="placeholder-photo" width="840" height="600"/>
     </resources>
 </document>
