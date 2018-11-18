@@ -45,8 +45,20 @@ class SignInViewController: UIViewController {
         
         handleTextField()
         // Do any additional setup after loading the view.
+
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        // do stuff only after we are sure the viewDidAppear has loaded
+        print("[DEBUG***]in override func viewDidAppear")
+        super.viewDidAppear(animated)
+        //check if we already have this user in cache/credentials
+        if Auth.auth().currentUser != nil {
+            print("current user:   \(String(describing: Auth.auth().currentUser))")
+            self.performSegue(withIdentifier: "signInToTabbarVC", sender: nil)
+        }
+        
+    }
 
     @objc func handleTextField(){
         emailTextField.addTarget(self, action:  #selector(SignUpViewController.textFieldDidChange), for: UIControl.Event.editingChanged)

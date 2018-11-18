@@ -1,3 +1,4 @@
+
 //
 //  HomeViewController.swift
 //  Recommingo
@@ -7,6 +8,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class HomeViewController: UIViewController {
 
@@ -17,15 +19,20 @@ class HomeViewController: UIViewController {
        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func logout_TouchUpInside(_ sender: Any) {
+           print(Auth.auth().currentUser)
+        
+            do {
+                try Auth.auth().signOut()
+            } catch let logoutError {
+                print(logoutError)
+                }
+        let storyboard:UIViewController = UIStoryboard(name:"Start", bundle:nil).instantiateViewController(withIdentifier: "SignInViewController") as UIViewController
+        self.present(storyboard, animated: true, completion: nil)
+ 
     }
-    */
+    
+   
+    
 
 }
