@@ -66,7 +66,7 @@ class SignUpViewController: UIViewController {
         profileImage.layer.cornerRadius = 40
         profileImage.clipsToBounds = true
         //allow it to be tapped to go to image picker
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SignUpViewController.handleSelectProfileImageView))
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.handleSelectProfileImageView))
         profileImage.addGestureRecognizer(tapGesture)
         profileImage.isUserInteractionEnabled = true
         signUpButton.isEnabled = false
@@ -80,9 +80,9 @@ class SignUpViewController: UIViewController {
     
     
     @objc func handleTextField(){
-        usernameTextField.addTarget(self, action:  #selector(SignUpViewController.textFieldDidChange), for: UIControl.Event.editingChanged)
-        emailTextField.addTarget(self, action:  #selector(SignUpViewController.textFieldDidChange), for: UIControl.Event.editingChanged)
-        passwordTextField.addTarget(self, action:  #selector(SignUpViewController.textFieldDidChange), for: UIControl.Event.editingChanged)
+        usernameTextField.addTarget(self, action:  #selector(self.textFieldDidChange), for: UIControl.Event.editingChanged)
+        emailTextField.addTarget(self, action:  #selector(self.textFieldDidChange), for: UIControl.Event.editingChanged)
+        passwordTextField.addTarget(self, action:  #selector(self.textFieldDidChange), for: UIControl.Event.editingChanged)
         
     }
     @objc func textFieldDidChange() {
