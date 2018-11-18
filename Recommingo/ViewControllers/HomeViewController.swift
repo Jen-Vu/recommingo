@@ -19,12 +19,15 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         tableView.dataSource = self //this calls the extension below
         loadPosts()
-        
+        //create a Post instance object
+        var post = Post(captionText: "Test", photoUrlString: "URL")
+        print(post.caption)
+        print(post.photoUrl)
     }
     
     func loadPosts() {
         Database.database().reference().child("posts").observe(.childAdded) { (snapshot: DataSnapshot) in
-            print(snapshot.value)
+            
         }
     }
     
