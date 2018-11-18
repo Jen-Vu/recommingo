@@ -22,8 +22,8 @@
                         <segue destination="Ha2-wm-vWX" kind="relationship" relationship="viewControllers" id="DIL-pO-JrZ"/>
                         <segue destination="b1f-Tq-uEx" kind="relationship" relationship="viewControllers" id="b14-ae-9Ts"/>
                         <segue destination="fFV-ef-KAb" kind="relationship" relationship="viewControllers" id="e33-jf-Ewi"/>
-                        <segue destination="t6d-UV-yjd" kind="relationship" relationship="viewControllers" id="O1a-GO-epj"/>
                         <segue destination="ztT-VC-rcy" kind="relationship" relationship="viewControllers" id="1Kw-57-NS4"/>
+                        <segue destination="t6d-UV-yjd" kind="relationship" relationship="viewControllers" id="O1a-GO-epj"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZLg-Pa-e2A" userLabel="First Responder" sceneMemberID="firstResponder"/>
