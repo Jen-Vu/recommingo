@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		003C10FF21A0DA5500A22711 /* Scratch.metal in Sources */ = {isa = PBXBuildFile; fileRef = 003C10FE21A0DA5500A22711 /* Scratch.metal */; };
+		003C110121A0ED4000A22711 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C110021A0ED4000A22711 /* AuthService.swift */; };
 		005494C4219EE4D30001D7B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005494C3219EE4D30001D7B9 /* AppDelegate.swift */; };
 		005494CB219EE4D70001D7B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 005494CA219EE4D70001D7B9 /* Assets.xcassets */; };
 		005494CE219EE4D70001D7B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005494CC219EE4D70001D7B9 /* LaunchScreen.storyboard */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		003C10FE21A0DA5500A22711 /* Scratch.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Scratch.metal; sourceTree = "<group>"; };
+		003C110021A0ED4000A22711 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		005494C0219EE4D30001D7B9 /* Recommingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recommingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		005494C3219EE4D30001D7B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		005494CA219EE4D70001D7B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				005494C3219EE4D30001D7B9 /* AppDelegate.swift */,
+				003C110021A0ED4000A22711 /* AuthService.swift */,
 				00C8579A21A077EB00E64633 /* ViewControllers */,
 				00C8579921A077D800E64633 /* Storyboards */,
 				005494CA219EE4D70001D7B9 /* Assets.xcassets */,
@@ -286,6 +289,7 @@
 				00D2AA0821A03EDC001B5B48 /* ActivityViewController.swift in Sources */,
 				00D2AA0421A03EAC001B5B48 /* DiscoverViewController.swift in Sources */,
 				00D2AA0A21A03EE4001B5B48 /* ProfileViewController.swift in Sources */,
+				003C110121A0ED4000A22711 /* AuthService.swift in Sources */,
 				003C10FF21A0DA5500A22711 /* Scratch.metal in Sources */,
 				00D2AA0621A03ED1001B5B48 /* CameraViewController.swift in Sources */,
 			);
