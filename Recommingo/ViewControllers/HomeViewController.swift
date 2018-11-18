@@ -18,14 +18,9 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.rowHeight = 500
         tableView.dataSource = self //this calls the extension below
         loadPosts()
-        
-        //create a Post instance object
-        //var post = Post(captionText: "Test", photoUrlString: "URL")
-        //print(post.caption)
-        //print(post.photoUrl)
-        //TODO Remove
     }
     
     func loadPosts() {
@@ -52,23 +47,24 @@ class HomeViewController: UIViewController {
         
     }
     
-    
 }
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return posts.count
+     return posts.count
+      //return 100
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // let cell = UITableViewCell()
         //re-usable cells
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as! HomeTableViewCell
         
-        //alternate
-        //cell.textLabel?.text = "\(indexPath.row)"
-        cell.textLabel?.text = posts[indexPath.row].caption
+        cell.profileImageView.image = UIImage(named: "photo1")
+        cell.nameLabel.text = "Steve-o"
+        cell.postImageView.image = UIImage(named:"photo2")
+        cell.captionLabel.text = "Oh this is the good stuff"
+ 
         
-        //cell.backgroundColor = .red
         return cell
     }
     

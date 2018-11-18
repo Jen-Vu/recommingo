@@ -13,6 +13,7 @@
 		003C110A21A101B600A22711 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 003C110721A101B500A22711 /* ProgressHUD.m */; };
 		003C110B21A101B600A22711 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 003C110821A101B600A22711 /* ProgressHUD.bundle */; };
 		003C110E21A1A1B000A22711 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C110D21A1A1B000A22711 /* Post.swift */; };
+		003C111021A1F77800A22711 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C110F21A1F77800A22711 /* HomeTableViewCell.swift */; };
 		005494C4219EE4D30001D7B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005494C3219EE4D30001D7B9 /* AppDelegate.swift */; };
 		005494CB219EE4D70001D7B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 005494CA219EE4D70001D7B9 /* Assets.xcassets */; };
 		005494CE219EE4D70001D7B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005494CC219EE4D70001D7B9 /* LaunchScreen.storyboard */; };
@@ -43,6 +44,7 @@
 		003C110821A101B600A22711 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		003C110921A101B600A22711 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		003C110D21A1A1B000A22711 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		003C110F21A1F77800A22711 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		005494C0219EE4D30001D7B9 /* Recommingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recommingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		005494C3219EE4D30001D7B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		005494CA219EE4D70001D7B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		003C111121A1F77F00A22711 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				003C110F21A1F77800A22711 /* HomeTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		005494B7219EE4D20001D7B9 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +127,7 @@
 				005494C3219EE4D30001D7B9 /* AppDelegate.swift */,
 				003C110221A0FB7900A22711 /* Config.swift */,
 				003C110021A0ED4000A22711 /* AuthService.swift */,
+				003C111121A1F77F00A22711 /* Views */,
 				00C8579A21A077EB00E64633 /* ViewControllers */,
 				00C8579921A077D800E64633 /* Storyboards */,
 				005494CA219EE4D70001D7B9 /* Assets.xcassets */,
@@ -310,6 +321,7 @@
 			files = (
 				005494DA219EEF000001D7B9 /* SignUpViewController.swift in Sources */,
 				005494D8219EE91E0001D7B9 /* SignInViewController.swift in Sources */,
+				003C111021A1F77800A22711 /* HomeTableViewCell.swift in Sources */,
 				005494C4219EE4D30001D7B9 /* AppDelegate.swift in Sources */,
 				00D2AA0221A03E13001B5B48 /* HomeViewController.swift in Sources */,
 				003C110E21A1A1B000A22711 /* Post.swift in Sources */,
