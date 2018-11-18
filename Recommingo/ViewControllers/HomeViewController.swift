@@ -9,6 +9,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class HomeViewController: UIViewController {
 
@@ -17,7 +18,14 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self //this calls the extension below
+        loadPosts()
         
+    }
+    
+    func loadPosts() {
+        Database.database().reference().child("posts").observe(.childAdded) { (snapshot: DataSnapshot) in
+            print(snapshot.value)
+        }
     }
     
     @IBAction func logout_TouchUpInside(_ sender: Any) {
@@ -36,15 +44,19 @@ class HomeViewController: UIViewController {
 
 }
 extension HomeViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.backgroundColor = .red
-        return cell
-        
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 100
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // let cell = UITableViewCell()
+        //re-usable cells
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath)
+        
+        //alternate
+        cell.textLabel?.text = "\(indexPath.row)"
+        cell.backgroundColor = .red
+        return cell
     }
     
 }
