@@ -12,11 +12,12 @@ import FirebaseAuth
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-       
+        tableView.dataSource = self //this calls the extension below
+        
     }
     
     @IBAction func logout_TouchUpInside(_ sender: Any) {
@@ -33,4 +34,17 @@ class HomeViewController: UIViewController {
    
     
 
+}
+extension HomeViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        cell.backgroundColor = .red
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
 }
