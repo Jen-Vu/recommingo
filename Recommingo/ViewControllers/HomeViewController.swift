@@ -64,9 +64,13 @@ extension HomeViewController: UITableViewDataSource {
         // let cell = UITableViewCell()
         //re-usable cells
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as! HomeTableViewCell
+        let post = posts[indexPath.row]
+        
+        cell.nameLabel.text = "Steve-o"
+        cell.captionLabel.text = post.caption
         
         cell.profileImageView.image = UIImage(named: "photo1")
-        cell.nameLabel.text = "Steve-o"
+       
         cell.postImageView.image = UIImage(named:"photo2")
         cell.captionLabel.text = "Oh this is the good stuff and it's a really long caption this is the good stuff and it's a really long caption "
  
