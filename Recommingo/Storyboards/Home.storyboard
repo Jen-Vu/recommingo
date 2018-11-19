@@ -131,6 +131,9 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="bgs-8J-dRW">
+                                <rect key="frame" x="177" y="323" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -139,9 +142,11 @@
                             <constraint firstItem="9g9-Gi-voG" firstAttribute="top" secondItem="vzF-Y9-Egq" secondAttribute="top" id="OjT-57-v68"/>
                             <constraint firstItem="9g9-Gi-voG" firstAttribute="trailing" secondItem="aR8-66-v1m" secondAttribute="trailing" id="PZd-Yu-46m"/>
                             <constraint firstItem="9g9-Gi-voG" firstAttribute="bottom" secondItem="aR8-66-v1m" secondAttribute="bottom" id="QPw-8a-X5x"/>
+                            <constraint firstItem="bgs-8J-dRW" firstAttribute="centerX" secondItem="aR8-66-v1m" secondAttribute="centerX" id="brm-PX-H3E"/>
                             <constraint firstItem="9g9-Gi-voG" firstAttribute="leading" secondItem="aR8-66-v1m" secondAttribute="leading" id="hKA-oU-SSU"/>
                             <constraint firstItem="9g9-Gi-voG" firstAttribute="trailing" secondItem="aR8-66-v1m" secondAttribute="trailing" id="jEy-Ab-3xH"/>
                             <constraint firstItem="9g9-Gi-voG" firstAttribute="top" secondItem="vzF-Y9-Egq" secondAttribute="top" id="oC3-zc-1u2"/>
+                            <constraint firstItem="bgs-8J-dRW" firstAttribute="centerY" secondItem="aR8-66-v1m" secondAttribute="centerY" id="vlD-W0-DxT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aR8-66-v1m"/>
                     </view>
@@ -153,6 +158,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="bgs-8J-dRW" id="0Ao-Wu-Ipd"/>
                         <outlet property="tableView" destination="9g9-Gi-voG" id="2Cc-JM-n2E"/>
                     </connections>
                 </viewController>

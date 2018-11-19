@@ -14,6 +14,7 @@ import SDWebImage
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
     
     //cache of current posts and users for the home view
@@ -35,6 +36,7 @@ class HomeViewController: UIViewController {
     }
     
     func loadPosts() {
+            activityIndicatorView.startAnimating()
         Database.database().reference().child("posts").observe(.childAdded) { (snapshot: DataSnapshot) in
             if let dict = snapshot.value as? [String: Any] {
                 //create post instance from dictionary key:value pair
@@ -43,8 +45,10 @@ class HomeViewController: UIViewController {
                 //get the user for the posts
                 //self.fetchUser(uid: newPost.uid!)
                 self.fetchUser(uid: newPost.uid!, completed: {
+                    self.activityIndicatorView.stopAnimating()
                     print("DEBUG: newPost uid:" + "\(String(describing: newPost.uid))")
                     self.posts.append(newPost)
+                    
                     self.tableView.reloadData()
                 })
                 print("DEBUG: newPost:" + "\(newPost)")
