@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseStorage
 import FirebaseDatabase
+import FirebaseAuth
 
 class CameraViewController: UIViewController {
     
@@ -79,7 +80,8 @@ class CameraViewController: UIViewController {
                         ProgressHUD.showError(error!.localizedDescription)
                         return
                     }
-                    let photoUrl = "\(String(describing: url))"
+                    print("DEBUG URL" +  "\(String(describing: url))" )
+                    let photoUrl = "\(String(describing: url!))"
                     self.sendDataToDatabase(photoUrl: photoUrl)
                 })
  
@@ -100,15 +102,22 @@ class CameraViewController: UIViewController {
     
     
     func sendDataToDatabase(photoUrl: String) {
+        print("SEND***:" + photoUrl)
             var ref: DatabaseReference!
             ref = Database.database().reference()
             let postsReference = ref.child("posts")
             
             let newPostId = postsReference.childByAutoId().key
             let newPostReference = postsReference.child(newPostId!)
-            
+        
+            //get uid if there's a current user
+            guard  let currentUser = Auth.auth().currentUser  else {
+                return
+            }
+            let currentUserId = currentUser.uid
+        
             //do something AFTER the upload process finishes
-            newPostReference.setValue([ "photoUrl": photoUrl, "caption": captionTextView.text!]) { (error, ref) in
+        newPostReference.setValue([ "photoUrl": photoUrl, "caption": captionTextView.text!, "uid": currentUserId]) { (error, ref) in
                 //if the upload fails, we'll have an error object
                 if error != nil {
                     ProgressHUD.showError(error!.localizedDescription)

@@ -46,7 +46,7 @@ class AuthService {
                         print("failed to get url from meta data", error!)
                         return
                     }
-                    let profileImageUrl = "\(String(describing: url))"
+                    let profileImageUrl = "\(String(describing: url!))"  //! to unpack the optional, otherwise the URL is incorrect
                     self.setUserInformation(profileImageUrl: profileImageUrl, username: username, email: email, uid: uid!, onSuccess: onSuccess)
                 })
             }

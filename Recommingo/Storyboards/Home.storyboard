@@ -29,7 +29,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="534.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo1" translatesAutoresizingMaskIntoConstraints="NO" id="47d-Eu-QNv">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderImg" translatesAutoresizingMaskIntoConstraints="NO" id="47d-Eu-QNv">
                                                     <rect key="frame" x="15" y="8" width="36" height="36"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="36" id="5Qd-Wp-GZu"/>
@@ -187,8 +187,8 @@
         <image name="Home" width="21" height="23"/>
         <image name="Home_Selected" width="21" height="23"/>
         <image name="like" width="46" height="41"/>
-        <image name="photo1" width="3098" height="2074"/>
         <image name="photo2" width="3264" height="4896"/>
+        <image name="placeholderImg" width="225" height="225"/>
         <image name="share" width="37" height="41"/>
     </resources>
 </document>

@@ -14,8 +14,11 @@
 		003C110B21A101B600A22711 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 003C110821A101B600A22711 /* ProgressHUD.bundle */; };
 		003C110E21A1A1B000A22711 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C110D21A1A1B000A22711 /* Post.swift */; };
 		003C111021A1F77800A22711 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C110F21A1F77800A22711 /* HomeTableViewCell.swift */; };
+		00457DDC21A2BA3300FBE9B2 /* RecommingoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00457DDB21A2BA3300FBE9B2 /* RecommingoTests.swift */; };
+		00457DE321A2BA7A00FBE9B2 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C110D21A1A1B000A22711 /* Post.swift */; };
+		00457E6721A2D78E00FBE9B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00457E6621A2D78D00FBE9B2 /* Assets.xcassets */; };
+		00457E6921A2EFFA00FBE9B2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00457E6821A2EFFA00FBE9B2 /* User.swift */; };
 		005494C4219EE4D30001D7B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005494C3219EE4D30001D7B9 /* AppDelegate.swift */; };
-		005494CB219EE4D70001D7B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 005494CA219EE4D70001D7B9 /* Assets.xcassets */; };
 		005494CE219EE4D70001D7B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005494CC219EE4D70001D7B9 /* LaunchScreen.storyboard */; };
 		005494D6219EE7B60001D7B9 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005494D5219EE7B60001D7B9 /* Start.storyboard */; };
 		005494D8219EE91E0001D7B9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005494D7219EE91E0001D7B9 /* SignInViewController.swift */; };
@@ -35,6 +38,16 @@
 		44B6C1045D89A13585899A14 /* Pods_Recommingo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0DAEF7F633E6EC7F1208AF /* Pods_Recommingo.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		00457DDE21A2BA3300FBE9B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 005494B8219EE4D20001D7B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 005494BF219EE4D30001D7B9;
+			remoteInfo = Recommingo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		003C10FE21A0DA5500A22711 /* Scratch.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Scratch.metal; sourceTree = "<group>"; };
 		003C110021A0ED4000A22711 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -45,9 +58,13 @@
 		003C110921A101B600A22711 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		003C110D21A1A1B000A22711 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		003C110F21A1F77800A22711 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		00457DD921A2BA3300FBE9B2 /* RecommingoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecommingoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00457DDB21A2BA3300FBE9B2 /* RecommingoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommingoTests.swift; sourceTree = "<group>"; };
+		00457DDD21A2BA3300FBE9B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00457E6621A2D78D00FBE9B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00457E6821A2EFFA00FBE9B2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		005494C0219EE4D30001D7B9 /* Recommingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recommingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		005494C3219EE4D30001D7B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		005494CA219EE4D70001D7B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		005494CD219EE4D70001D7B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		005494CF219EE4D70001D7B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		005494D5219EE7B60001D7B9 /* Start.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
@@ -71,6 +88,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		00457DD621A2BA3300FBE9B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		005494BD219EE4D30001D7B9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -86,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				003C110D21A1A1B000A22711 /* Post.swift */,
+				00457E6821A2EFFA00FBE9B2 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -98,6 +123,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		00457DDA21A2BA3300FBE9B2 /* RecommingoTests */ = {
+			isa = PBXGroup;
+			children = (
+				00457DDB21A2BA3300FBE9B2 /* RecommingoTests.swift */,
+				00457DDD21A2BA3300FBE9B2 /* Info.plist */,
+			);
+			path = RecommingoTests;
+			sourceTree = "<group>";
+		};
 		005494B7219EE4D20001D7B9 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +139,7 @@
 				003C110821A101B600A22711 /* ProgressHUD.bundle */,
 				003C110921A101B600A22711 /* ProgressHUD.h */,
 				003C110721A101B500A22711 /* ProgressHUD.m */,
+				00457DDA21A2BA3300FBE9B2 /* RecommingoTests */,
 				005494C1219EE4D30001D7B9 /* Products */,
 				0130897B37A94C9329F0D6AC /* Pods */,
 				7AA3EBBE90C125EF5AEF8B37 /* Frameworks */,
@@ -116,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				005494C0219EE4D30001D7B9 /* Recommingo.app */,
+				00457DD921A2BA3300FBE9B2 /* RecommingoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,6 +159,7 @@
 		005494C2219EE4D30001D7B9 /* Recommingo */ = {
 			isa = PBXGroup;
 			children = (
+				00457E6621A2D78D00FBE9B2 /* Assets.xcassets */,
 				003C110C21A1A18000A22711 /* Model */,
 				005494C3219EE4D30001D7B9 /* AppDelegate.swift */,
 				003C110221A0FB7900A22711 /* Config.swift */,
@@ -130,7 +167,6 @@
 				003C111121A1F77F00A22711 /* Views */,
 				00C8579A21A077EB00E64633 /* ViewControllers */,
 				00C8579921A077D800E64633 /* Storyboards */,
-				005494CA219EE4D70001D7B9 /* Assets.xcassets */,
 				005494CC219EE4D70001D7B9 /* LaunchScreen.storyboard */,
 				00C8579B21A07A4800E64633 /* GoogleService-Info.plist */,
 				005494CF219EE4D70001D7B9 /* Info.plist */,
@@ -187,6 +223,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		00457DD821A2BA3300FBE9B2 /* RecommingoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00457DE221A2BA3300FBE9B2 /* Build configuration list for PBXNativeTarget "RecommingoTests" */;
+			buildPhases = (
+				00457DD521A2BA3300FBE9B2 /* Sources */,
+				00457DD621A2BA3300FBE9B2 /* Frameworks */,
+				00457DD721A2BA3300FBE9B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00457DDF21A2BA3300FBE9B2 /* PBXTargetDependency */,
+			);
+			name = RecommingoTests;
+			productName = RecommingoTests;
+			productReference = 00457DD921A2BA3300FBE9B2 /* RecommingoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		005494BF219EE4D30001D7B9 /* Recommingo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 005494D2219EE4D70001D7B9 /* Build configuration list for PBXNativeTarget "Recommingo" */;
@@ -216,6 +270,10 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "The Polestone Consulting Team";
 				TargetAttributes = {
+					00457DD821A2BA3300FBE9B2 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 005494BF219EE4D30001D7B9;
+					};
 					005494BF219EE4D30001D7B9 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
@@ -236,21 +294,29 @@
 			projectRoot = "";
 			targets = (
 				005494BF219EE4D30001D7B9 /* Recommingo */,
+				00457DD821A2BA3300FBE9B2 /* RecommingoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		00457DD721A2BA3300FBE9B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		005494BE219EE4D30001D7B9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				003C110B21A101B600A22711 /* ProgressHUD.bundle in Resources */,
 				005494CE219EE4D70001D7B9 /* LaunchScreen.storyboard in Resources */,
+				00457E6721A2D78E00FBE9B2 /* Assets.xcassets in Resources */,
 				00C8579421A06EC900E64633 /* Camera.storyboard in Resources */,
 				00D2AA0E21A0477D001B5B48 /* Home.storyboard in Resources */,
 				00C8579621A06EF500E64633 /* Activity.storyboard in Resources */,
-				005494CB219EE4D70001D7B9 /* Assets.xcassets in Resources */,
 				005494D6219EE7B60001D7B9 /* Start.storyboard in Resources */,
 				00D2AA1621A048F5001B5B48 /* Profile.storyboard in Resources */,
 				00D2AA0C21A0453A001B5B48 /* Main.storyboard in Resources */,
@@ -295,6 +361,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Recommingo/Pods-Recommingo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -304,6 +371,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -315,6 +383,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		00457DD521A2BA3300FBE9B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00457DDC21A2BA3300FBE9B2 /* RecommingoTests.swift in Sources */,
+				00457DE321A2BA7A00FBE9B2 /* Post.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		005494BC219EE4D30001D7B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -327,6 +404,7 @@
 				003C110E21A1A1B000A22711 /* Post.swift in Sources */,
 				003C110321A0FB7900A22711 /* Config.swift in Sources */,
 				00D2AA0821A03EDC001B5B48 /* ActivityViewController.swift in Sources */,
+				00457E6921A2EFFA00FBE9B2 /* User.swift in Sources */,
 				003C110A21A101B600A22711 /* ProgressHUD.m in Sources */,
 				00D2AA0421A03EAC001B5B48 /* DiscoverViewController.swift in Sources */,
 				00D2AA0A21A03EE4001B5B48 /* ProfileViewController.swift in Sources */,
@@ -337,6 +415,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00457DDF21A2BA3300FBE9B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 005494BF219EE4D30001D7B9 /* Recommingo */;
+			targetProxy = 00457DDE21A2BA3300FBE9B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		005494CC219EE4D70001D7B9 /* LaunchScreen.storyboard */ = {
@@ -350,6 +436,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		00457DE021A2BA3300FBE9B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4AT6T29999;
+				INFOPLIST_FILE = RecommingoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.polestone.RecommingoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Recommingo.app/Recommingo";
+			};
+			name = Debug;
+		};
+		00457DE121A2BA3300FBE9B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4AT6T29999;
+				INFOPLIST_FILE = RecommingoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.polestone.RecommingoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Recommingo.app/Recommingo";
+			};
+			name = Release;
+		};
 		005494D0219EE4D70001D7B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -475,6 +601,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4AT6T29999;
 				INFOPLIST_FILE = Recommingo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -497,6 +624,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4AT6T29999;
 				INFOPLIST_FILE = Recommingo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -512,6 +640,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		00457DE221A2BA3300FBE9B2 /* Build configuration list for PBXNativeTarget "RecommingoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00457DE021A2BA3300FBE9B2 /* Debug */,
+				00457DE121A2BA3300FBE9B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		005494BB219EE4D20001D7B9 /* Build configuration list for PBXProject "Recommingo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

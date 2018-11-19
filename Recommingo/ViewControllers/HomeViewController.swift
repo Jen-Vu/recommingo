@@ -10,11 +10,16 @@
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
+import SDWebImage
 
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    
+    //cache of current posts and users for the home view
     var posts = [Post]()
+    var users = [User]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,50 +37,70 @@ class HomeViewController: UIViewController {
     func loadPosts() {
         Database.database().reference().child("posts").observe(.childAdded) { (snapshot: DataSnapshot) in
             if let dict = snapshot.value as? [String: Any] {
-                    //create post instance from dictionary key:value pair
-                    let newPost = Post.transformPost(dict: dict)
+                //create post instance from dictionary key:value pair
+                let newPost = Post.transformPost(dict: dict)
                 
-                //append the latest snapshot into an array of posts
-                self.posts.append(newPost)
-                self.tableView.reloadData()
+                //get the user for the posts
+                //self.fetchUser(uid: newPost.uid!)
+                self.fetchUser(uid: newPost.uid!, completed: {
+                    print("DEBUG: newPost uid:" + "\(String(describing: newPost.uid))")
+                    self.posts.append(newPost)
+                    self.tableView.reloadData()
+                })
+                print("DEBUG: newPost:" + "\(newPost)")
+              
             }
         }
     }
     
-    @IBAction func logout_TouchUpInside(_ sender: Any) {
-        do {
-            try Auth.auth().signOut()
-        } catch let logoutError {
-            print(logoutError)
+    func fetchUser(uid: String, completed: @escaping () -> Void) {
+        
+        print("DEBUG UID: " + uid)
+        //get the user info for whoever posted the loadPost post
+            Database.database().reference().child("users").child("zPF9bMoyQoaOCiftiXq51gHzrrM2").observeSingleEvent(of: DataEventType.value, with: { (snapshot) in
+                if let dict = snapshot.value as? [String: Any]{
+                    print("DEBUG xxx")
+                    let user = User.transformUser(dict: dict)
+                    self.users.append(user)
+                    completed()
+                }
+            })
+    
+     
+    }
+        
+        @IBAction func logout_TouchUpInside(_ sender: Any) {
+            do {
+                try Auth.auth().signOut()
+                let storyboard:UIViewController = UIStoryboard(name:"Start", bundle:nil).instantiateViewController(withIdentifier: "SignInViewController") as UIViewController
+                self.present(storyboard, animated: true, completion: nil)
+                
+                //show the profile image when we've logged out
+                
+            } catch let logoutError {
+                print(logoutError)
+            }
+            
+            
         }
-        let storyboard:UIViewController = UIStoryboard(name:"Start", bundle:nil).instantiateViewController(withIdentifier: "SignInViewController") as UIViewController
-        self.present(storyboard, animated: true, completion: nil)
         
     }
-    
-}
-extension HomeViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-     return posts.count
-      //return 100
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // let cell = UITableViewCell()
-        //re-usable cells
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as! HomeTableViewCell
-        let post = posts[indexPath.row]
+    extension HomeViewController: UITableViewDataSource {
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return posts.count
+            //return 100
+        }
         
-        cell.nameLabel.text = "Steve-o"
-        cell.captionLabel.text = post.caption
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            // let cell = UITableViewCell()
+            //re-usable cells
+            let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as! HomeTableViewCell
+            let post = posts[indexPath.row]
+            let user = users[indexPath.row] //these row values will be the same because we populate both arrays simultenously
+            
+            cell.post = post //check out the HomeTableViewCell class to see that since 'post' is an instance variable, we can now use didSet to call all required methods
+            cell.user = user
+            return cell
+        }
         
-        cell.profileImageView.image = UIImage(named: "photo1")
-       
-        cell.postImageView.image = UIImage(named:"photo2")
-        cell.captionLabel.text = "Oh this is the good stuff and it's a really long caption this is the good stuff and it's a really long caption "
- 
-        
-        return cell
-    }
-    
 }

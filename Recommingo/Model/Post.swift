@@ -10,7 +10,9 @@ import Foundation
 class Post {
     var caption: String?
     var photoUrl: String?
-  
+    var uid: String?
+    
+    
 }
 
 extension Post {
@@ -19,6 +21,7 @@ extension Post {
         let post = Post()
         post.caption = dict["caption"] as? String
         post.photoUrl = dict["photoUrl"] as? String
+        post.uid = dict["uid"] as? String
         return post
     }
     

@@ -54,7 +54,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Recommingo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5s-tN-4YX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recommingo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5s-tN-4YX">
                                 <rect key="frame" x="106" y="101" width="163" height="58"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58" id="huF-gC-HlC"/>
@@ -87,6 +87,7 @@
                             <constraint firstItem="nyp-FP-IK7" firstAttribute="leading" secondItem="t1l-Zb-PpS" secondAttribute="leading" constant="20" id="XtL-Vz-tWd"/>
                             <constraint firstItem="r5s-tN-4YX" firstAttribute="centerX" secondItem="0mv-bu-897" secondAttribute="centerX" id="iJf-Mw-cqg"/>
                             <constraint firstItem="t1l-Zb-PpS" firstAttribute="trailing" secondItem="qCL-hM-Ta7" secondAttribute="trailing" id="rVD-pG-e9z"/>
+                            <constraint firstItem="r5s-tN-4YX" firstAttribute="top" secondItem="t1l-Zb-PpS" secondAttribute="top" constant="81" id="tNY-tI-EBr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="t1l-Zb-PpS"/>
                     </view>

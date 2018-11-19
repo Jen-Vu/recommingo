@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Camera-->
+        <!--Recommend-->
         <scene sceneID="Nnt-DZ-ydo">
             <objects>
                 <viewController id="kmH-Ol-0Lx" customClass="CameraViewController" customModule="Recommingo" customModuleProvider="target" sceneMemberID="viewController">
@@ -71,7 +71,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="No7-Fb-S39"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Camera" id="3er-U7-hXi">
+                    <navigationItem key="navigationItem" title="Recommend" id="3er-U7-hXi">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="5Fn-mt-jz3">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
